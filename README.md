@@ -1,7 +1,5 @@
 # Bella & Edward - Wedding Invitation 🕊️
 
-*[Português abaixo]*
-
 Welcome to the digital wedding invitation of Bella & Edward. This project is a classic, fine-art style web invitation featuring interactive elements, smooth scrolling animations, and an integrated RSVP form. 
 
 ### Features
