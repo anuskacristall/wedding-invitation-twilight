@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Invitation - Classic Elegance</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&family=Rouge+Script&display=swap" rel="stylesheet" />
+  <!-- AOS CSS for smooth scrolling animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="noscroll">
+  <!-- Audio Element -->
+  <audio id="bg-music" src="Turning%20Page%20(Instrumental)%20bevezeto.mp3" loop></audio>
+
+  <!-- Hero / Envelope Cover -->
+  <div id="envelope-screen">
+    <div class="hero-bg-photo"></div>
+
+    <div class="hero-content">
+      <p class="small-caps fade-in-delay-1">YOU'VE GOT MAIL FROM</p>
+      <h1 class="cursive-names fade-in-delay-2">Bella &amp; Edward</h1>
+      
+      <!-- Interactive CSS Envelope -->
+      <div class="envelope-wrapper fade-in-delay-3" id="envelope">
+        <div class="env-back">
+          <div class="env-liner"></div>
+        </div>
+        <div class="env-letter">
+          <div class="letter-content">
+            <p class="monogram">B &amp; E</p>
+          </div>
+        </div>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <div class="env-seal">
+          <div class="seal-design">B&amp;E</div>
+        </div>
+      </div>
+      
+      <p class="tap-text fade-in-delay-4" id="tap-text">CLICK ENVELOPE TO OPEN</p>
+      <p class="volume-text fade-in-delay-4">Turn the volume up for the best experience</p>
+    </div>
+  </div>
+
+  <!-- Main Content (Classic Wedding Website) -->
+  <main id="main-content" style="display: none;">
+    
+    <!-- 1. Hero Section -->
+    <section class="section-hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner" data-aos="fade-up" data-aos-duration="1500">
+        <p class="small-caps white">WE ARE GETTING MARRIED</p>
+        <h1 class="hero-title">Bella &amp; Edward</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-date">AUGUST 13, 2006 &nbsp;&bull;&nbsp; FORKS, WA</p>
+      </div>
+
+      <!-- Delicate Music Button at the bottom of the Hero Section -->
+      <div class="hero-music-wrapper" data-aos="fade-up" data-aos-delay="500">
+        <button id="music-toggle" class="delicate-music-btn" aria-label="Toggle Music">
+          <div class="music-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3" class="play-icon"></polygon>
+              <g class="pause-icon">
+                <rect x="6" y="4" width="4" height="16"></rect>
+                <rect x="14" y="4" width="4" height="16"></rect>
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. Countdown Section -->
+    <section class="section-countdown" id="countdown-section">
+      <div class="container text-center" data-aos="fade-up">
+        <p class="quote-heading">"No measure of time with you would be long enough,<br>but let's start with forever."</p>
+        <h2 class="countdown-small-title">The Countdown</h2>
+        
+        <div class="countdown-wrapper" id="countdown">
+          <div class="time-block">
+            <span class="time-value" id="cd-days">00</span>
+            <span class="time-label">Days</span>
+          </div>
+          <div class="time-block">
+            <span class="time-value" id="cd-hours">00</span>
+            <span class="time-label">Hours</span>
+          </div>
+          <div class="time-block">
+            <span class="time-value" id="cd-minutes">00</span>
+            <span class="time-label">Minutes</span>
+          </div>
+          <div class="time-block">
+            <span class="time-value" id="cd-seconds">00</span>
+            <span class="time-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Our Story Section -->
+    <section class="section-story" id="story">
+      <!-- Added a specific texture background for this section -->
+      <div class="story-texture-bg"></div>
+      <div class="container relative-z">
+        <div class="story-grid">
+          <div class="story-image" data-aos="fade-right">
+            <img src="assets/our-story.png" alt="Bella and Edward" />
+          </div>
+          <div class="story-text" data-aos="fade-left">
+            <h2 class="section-heading">Our Story</h2>
+            <p>They say true love is rare because it takes courage: the courage to be vulnerable and let someone else see who we truly are.</p>
+            <p>We've been through uncertainties, distance, and choices that seemed impossible. But in the end, we discovered that there is no safer place in the world than beside someone who accepts us completely — without masks, without hesitation, and without fear.</p>
+            <p>Being with someone who loves us and allows us to truly be ourselves is the greatest gift life could offer. And now, out of all the paths we could have taken, we choose to walk side by side.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. The Details Section -->
+    <section class="section-details" id="details">
+      <div class="container text-center">
+        <h2 class="section-heading" data-aos="fade-up">The Wedding Day</h2>
+        
+        <div class="details-grid">
+          <div class="detail-box" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="small-caps bold">Ceremony</h3>
+            <p class="detail-time">4:00 PM</p>
+            <p class="detail-location"><strong>The Cullen Residence</strong><br>123 Forest Drive<br>Forks, Washington</p>
+          </div>
+          
+          <div class="detail-box" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="small-caps bold">Reception</h3>
+            <p class="detail-time">6:00 PM</p>
+            <p class="detail-location"><strong>The Cullen Residence</strong><br>Dinner, drinks, and dancing to follow under the stars.</p>
+          </div>
+          
+          <div class="detail-box" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="small-caps bold">Dress Code</h3>
+            <p class="detail-time">Formal Attire</p>
+            <p class="detail-location">We kindly request our guests to wear dark, elegant tones suitable for an evening celebration in the woods.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. RSVP Section -->
+    <section class="section-rsvp bg-light" id="rsvp">
+      <div class="container" data-aos="fade-up">
+        <div class="rsvp-card-classic">
+          <h2 class="section-heading text-center">RSVP</h2>
+          <p class="simple-text text-center">Kindly respond by July 13, 2006</p>
+          
+          <form id="rsvp-form" class="classic-form" novalidate>
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                  <option value="" disabled selected>Select...</option>
+                  <option value="BR" data-code="+55">Brazil</option>
+                  <option value="US" data-code="+1">United States</option>
+                  <option value="UK" data-code="+44">United Kingdom</option>
+                  <option value="IT" data-code="+39">Italy</option>
+                  <option value="FR" data-code="+33">France</option>
+                  <option value="PT" data-code="+351">Portugal</option>
+                  <option value="Other" data-code="">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+            </div>
+
+            <div class="form-group attendance-group">
+              <p class="small-caps bold">Will you attend?</p>
+              <div class="radio-options">
+                <label class="radio-label"><input type="radio" name="attendance" value="yes" required /> <span>Joyfully Accept</span></label>
+                <label class="radio-label"><input type="radio" name="attendance" value="no" /> <span>Regretfully Decline</span></label>
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn-classic">Send RSVP</button>
+            </div>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-classic">
+      <p class="cursive-names medium">Bella &amp; Edward</p>
+      <p class="small-caps">August 13, 2006</p>
+    </footer>
+
+  </main>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
